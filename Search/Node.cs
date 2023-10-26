@@ -9,7 +9,8 @@ namespace Search
     public class Node<T>
     {
         private T value;
-        private Node<T> next = null;
+        private Node<T> next;
+
 
         public T Value
         {
@@ -22,11 +23,17 @@ namespace Search
             set { next = value; }
         }
 
-        public Node() { }
+
+        public Node()
+        {
+            Value = default;
+            Next = null;
+        }
         public Node(T value)
         {
             Value = value;
             Next = next;
         }
+
     }
 }

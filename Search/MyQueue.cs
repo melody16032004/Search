@@ -146,5 +146,10 @@ namespace Search
             Console.WriteLine("[" + qArray[0] + "] - ");
             //Console.ForegroundColor = ConsoleColor.White;
         }
+
+        public void Input()
+        {
+            Console.WriteLine("Hello World");
+        }
     }
 }

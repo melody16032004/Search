@@ -132,5 +132,13 @@ namespace Search
             }
             return Right.RightMost();
         }
+        public NodeTree LeftMost()
+        {
+            if (Left == null)
+            {
+                return this;
+            }
+            return Right.LeftMost();
+        }
     }
 }

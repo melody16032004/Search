@@ -56,5 +56,13 @@ namespace Search
             }
             return root.SearchNode(x);
         }
+        public NodeTree NodeMax()
+        {
+            if (root == null)
+            {
+                return null;
+            }
+            return root.RightMost();
+        }
     }
 }

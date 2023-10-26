@@ -124,5 +124,13 @@ namespace Search
                 return right.SearchNode(x);
             }
         }
+        public NodeTree RightMost()
+        {
+            if (Right == null)
+            {
+                return this;
+            }
+            return Right.RightMost();
+        }
     }
 }
